@@ -4,6 +4,8 @@ projects.zsh
 custom
 !custom/plugins/example
 !custom/example.zsh
+!custom/aliases.zsh
+!custom/path.zsh
 *.swp
 !custom/example.zshcache
 cache/
