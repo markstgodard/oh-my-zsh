@@ -11,10 +11,7 @@ export PATH=$GRADLE_HOME/bin:$PATH
 
 # Ant
 export ANT_HOME=~/Development/tools/apache-ant-1.9.4
-
-# Maven
-export MAVEN_HOME=~/Development/tools/apache-maven-3.2.3
-export PATH=$PATH:/usr/local/sbin:$ANT_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin
+export PATH=$PATH:$ANT_HOME/bin
 
 # Oracle
 export DYLD_LIBRARY_PATH=/Users/mark/Development/tools/instantclient_11_2
@@ -23,14 +20,20 @@ export DYLD_LIBRARY_PATH=/Users/mark/Development/tools/instantclient_11_2
 export PGHOST=localhost
 export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
 
-# Golang path stuff
+# MySQL
+MYSQL=/usr/local/mysql/bin
+export PATH=$PATH:$MYSQL
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+
+# Golang
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOROOT=/usr/local/go
 export GOPATH=~/workspace/go
 export PATH=$GOPATH/bin:$PATH
 
-# Add RVM to PATH
+# Ruby / RVM
 export PATH="$HOME/.rvm/bin:$PATH"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-# add local bin before bin for things like CTAGS
-export PATH=/usr/local/bin:$PATH
+# Add usr local bin before bin for things like CTAGS
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
