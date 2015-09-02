@@ -37,3 +37,7 @@ export PATH="$HOME/.rvm/bin:$PATH"
 
 # Add usr local bin before bin for things like CTAGS
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+
+# add custom scripts dir to path
+export PATH=$PATH:~/scripts
+
