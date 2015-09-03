@@ -36,8 +36,8 @@ export PATH="$HOME/.rvm/bin:$PATH"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Chruby
-source /usr/local/opt/chruby/share/chruby/auto.sh
-RUBIES+=(~/.rvm/rubies/*)
+# source /usr/local/opt/chruby/share/chruby/auto.sh
+# RUBIES+=(~/.rvm/rubies/*)
 
 # Add usr local bin before bin for things like CTAGS
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
