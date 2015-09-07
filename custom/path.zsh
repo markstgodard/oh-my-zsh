@@ -40,4 +40,3 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # add custom scripts dir to path
 export PATH=$PATH:~/scripts
-
